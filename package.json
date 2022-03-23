@@ -1,0 +1,21 @@
+{
+  "name": "instagramclone",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "co": "sui-mono commit"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@s-ui/mono": "^2.22.0",
+    "@vitejs/plugin-react": "^1.0.7",
+    "standard": "^16.0.4",
+    "vite": "^2.8.0"
+  }
+}
