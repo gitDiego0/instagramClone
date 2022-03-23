@@ -1,12 +1,13 @@
 import './App.css'
 import Header from './components/Header/Header'
+import StoriesFeed from './components/StoriesFeed/StoriesFeed'
 
 function App() {
   return (
     <div className="App">
-      <main>
-        <Header />
-      </main>
+      <Header />
+      <StoriesFeed />
+      <main></main>
     </div>
   )
 }
