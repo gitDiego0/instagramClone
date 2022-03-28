@@ -1,5 +1,6 @@
 .carousel {
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 10px 10px;
   display: block;
   max-height: 85px;
+  border-bottom: 1px solid rgba(124, 124, 124, 0.4);
 }
