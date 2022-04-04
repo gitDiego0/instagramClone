@@ -4,7 +4,15 @@ import CommentIcon from '../Icons/CommentIcon'
 import Messages from '../Icons/Messages'
 import styles from './styles.module.css'
 
-export default function Publication({ username, imgSrc, imgUserSrc }) {
+export default function Publication({
+  username,
+  imgSrc,
+  imgUserSrc,
+  publishDate,
+  location,
+  likes,
+  description,
+}) {
   return (
     <div className={styles.publicationContainer}>
       <header className={styles.publicationHeader}>
@@ -19,21 +27,34 @@ export default function Publication({ username, imgSrc, imgUserSrc }) {
         <img src={imgSrc} className={styles.image} />
       </div>
       <div className={styles.actionsWrapper}>
-        <span>
-          <button>
-            <HeartIcon />
-          </button>
-        </span>
-        <span>
-          <button>
-            <CommentIcon />
-          </button>
-        </span>
-        <span>
-          <button>
-            <Messages />
-          </button>
-        </span>
+        <div className={styles.actionIcons}>
+          <span>
+            <button>
+              <HeartIcon />
+            </button>
+          </span>
+          <span>
+            <button>
+              <CommentIcon />
+            </button>
+          </span>
+          <span>
+            <button>
+              <Messages />
+            </button>
+          </span>
+        </div>
+
+        <span className={styles.likes}>{likes} Me gusta</span>
+        <div className={styles.descriptionWrapper}>
+          <span>
+            <a>{username}</a>
+            <span className={styles.description}>{description}</span>
+          </span>
+        </div>
+        <div className={styles.publishDate}>
+          <span> HACE {publishDate}</span>
+        </div>
       </div>
     </div>
   )
