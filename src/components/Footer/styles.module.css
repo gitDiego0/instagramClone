@@ -30,7 +30,7 @@
   border-radius: 100%;
 }
 
-a {
+.iconContainer a {
   display: flex;
   justify-content: center;
   align-items: center;

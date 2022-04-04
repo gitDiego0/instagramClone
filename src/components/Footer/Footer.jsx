@@ -5,7 +5,7 @@ import PublishIcon from '../Icons/PublishIcon'
 import SearchIcon from '../Icons/SearchIcon'
 import styles from './styles.module.css'
 
-export default function Footer() {
+export default function Footer({ setUser, isloggedin }) {
   return (
     <footer className={styles.footer}>
       <div className={styles.iconContainer}>
@@ -31,7 +31,7 @@ export default function Footer() {
         </a>
         <a>
           <div className={styles.iconWrapper}>
-            <span className={styles.icon}>h</span>
+            <span className={styles.icon}></span>
           </div>
         </a>
       </div>
